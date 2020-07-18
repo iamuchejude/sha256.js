@@ -1,0 +1,31 @@
+<div class=content>
+<img id=avatar src=https://api.adorable.io/avatar/128/:sha2.png style="float: right">
+sha256(<span id=string>Hello, World!</span>) = <span id=result></span>
+
+<br><br>
+Thanks
+<br><a href=https://duckduckgo.com/?q=michelc+organic.technology™.gq>+michelc</a>
+
+<p>
+The result can be verified running the following command in bash:
+<br><code>echo -n "Hello, World!" | sha256 -x
+</code>
+</p>
+
+<p>
+read also
+<a href="https://stackoverflow.com/questions/18338890/are-there-any-sha-256-javascript-implementations-that-are-generally-considered-t">
+<img src="https://kmug4vp7hgnzq1sw1qjlfxbtwh8izwmxzl3x2j48l6ybma6oi8x1w.ipfs.dweb.link/so.png">
+</a>
+</p>
+
+</div>
+
+<script src=js/sha256.js></script>
+<script>
+  let string = document.getElementById('string').innerHTML
+  let sha2 = sha256(string)
+  document.getElementById('result').innerHTML = sha2
+  document.getElementById('avatar').src = document.getElementById('avatar').src.replace(':sha2',sha2)
+</script>
+
